@@ -285,6 +285,6 @@ HSV 颜色均匀 + 圆度 + 半径尺寸稳定 + "往复滚动"轨迹签名（�
 | --- | --- |
 | 题一 | `figures/fig_task2_1_open.png`、`figures/fig_task2_1_channels.png`、`images/channel_{B,G,R}.png`、`data/task2_1_info.json` |
 | 题二 | `figures/fig_task2_2_geometric.png`、`images/task2_2_*.jpg`（8 张） |
-| 题三 | `images/task2_3_contours_annotated.png`、`task2_3_mask.png`、`task2_3_hierarchy.png`、`figures/fig_task2_3_contours.png`、`data/task2_3_contours.json` |
+| 题三 | `images/task2_3_contours_annotated.png`（只画飞机）、`task2_3_mask.png`、`task2_3_rejected.png`（被剔除的云）、`figures/fig_task2_3_contours.png`、`data/task2_3_contours.json` |
 | 题四 | **`videos/example2_motion_compare.mp4`**、`figures/fig_task2_4_motion_stats.png`、`figures/fig_task2_4_frames.png`、`data/task2_4_motion_stats.{json,csv}` |
 | 题五 | **`videos/example3_tracking.mp4`**、**`videos/example4_tracking.mp4`**、`figures/fig_task2_5_tracking_example{3,4}.png`、`data/task2_5_tracking_metrics.json` |
