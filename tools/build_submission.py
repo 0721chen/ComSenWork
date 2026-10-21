@@ -45,8 +45,9 @@ MODELS = [
 
 # 额外补充的图片（题目点名要的"单独结果图"，报告正文里只是以文字路径提到）
 EXTRA_IMAGES = [
-    (TASK2 / "outputs/images/task2_3_contours_annotated.png", "任务2_题三_轮廓标注图.png"),
-    (TASK2 / "outputs/images/task2_3_mask.png", "任务2_题三_轮廓分割掩码.png"),
+    (TASK2 / "outputs/images/task2_3_contours_annotated.png", "任务2_题三_飞机轮廓标注图.png"),
+    (TASK2 / "outputs/images/task2_3_mask.png", "任务2_题三_候选掩码.png"),
+    (TASK2 / "outputs/images/task2_3_rejected.png", "任务2_题三_被剔除的云.png"),
     (TASK2 / "outputs/images/channel_B.png", "任务2_题一_通道B.png"),
     (TASK2 / "outputs/images/channel_G.png", "任务2_题一_通道G.png"),
     (TASK2 / "outputs/images/channel_R.png", "任务2_题一_通道R.png"),
@@ -408,7 +409,7 @@ def build() -> None:
 | --- | --- |
 | task-2 题一：打开显示图片、分离三个通道 | `图片/任务2_fig_task2_1_open.png`、`图片/任务2_fig_task2_1_channels.png` |
 | task-2 题二：缩放/旋转/平移/翻转 | `图片/任务2_fig_task2_2_geometric.png` |
-| task-2 题三：轮廓检测 + 总面积/总周长 | `图片/任务2_题三_轮廓标注图.png`（单独标注图）、`图片/任务2_题三_轮廓分割掩码.png`、`图片/任务2_fig_task2_3_contours.png`（流程与统计）；报告 §题三：**4 个轮廓 / 99 321 px² / 4 161.5 px** |
+| task-2 题三：飞机轮廓检测 + 总面积/总周长 | `图片/任务2_题三_飞机轮廓标注图.png`（只画飞机）、`图片/任务2_题三_候选掩码.png`、**`图片/任务2_题三_被剔除的云.png`**、`图片/任务2_fig_task2_3_contours.png`（流程+判据+统计）；报告 §题三：**只保留 1 个飞机轮廓，面积 71 772.5 px²、周长 2 300.3 px**，3 个云候选按「边缘密度 12.3% vs 0.0%、亮度 V 128 vs 197~210」剔除 |
 | task-2 题四：MOG2 vs 不用背景减除（标注视频 + 分析） | **`视频/task2_题四_example2_帧差法vsMOG2_标注视频.mp4`**、`图片/任务2_fig_task2_4_motion_stats.png`、`图片/任务2_fig_task2_4_frames.png` |
 | task-2 题五：example3/4 小球追踪（标注视频 + 分析） | **`视频/task2_题五_example3_小球追踪结果.mp4`**、**`视频/task2_题五_example4_小球追踪结果.mp4`**、`图片/任务2_fig_task2_5_tracking_example3.png`、`图片/任务2_fig_task2_5_tracking_example4.png` |
 | task-3 题一：深度学习概念理解 | 报告 §题一（概念逐条 + 与实验数字对应） |
