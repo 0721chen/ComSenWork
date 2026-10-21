@@ -1,0 +1,91 @@
+{
+  "model": "yolov8n.pt",
+  "params_M": 3.157,
+  "gflops": null,
+  "n_classes": 80,
+  "task": "detect",
+  "demo_inference": {
+    "image": "coco-bear.jpg",
+    "n_objects": 1,
+    "detections": [
+      {
+        "class": "bear",
+        "conf": 0.951,
+        "xyxy": [
+          30.1,
+          75.3,
+          581.0,
+          638.9
+        ]
+      }
+    ],
+    "boxes_attrs": [
+      "xyxy",
+      "xywh",
+      "conf",
+      "cls"
+    ],
+    "speed_ms": {
+      "preprocess": 2.1,
+      "inference": 60.5,
+      "postprocess": 1.0
+    }
+  },
+  "api_notes": [
+    {
+      "capability": "加载模型",
+      "call": "YOLO(\"yolov8n.pt\")",
+      "note": "按权重文件名推断任务（detect/segment/classify/pose）"
+    },
+    {
+      "capability": "推理",
+      "call": "model.predict(source, conf=0.25, iou=0.45, imgsz=640, classes=[...], device=\"cpu\")",
+      "note": "source 可以是路径/目录/numpy/PIL/URL；返回 list[Results]"
+    },
+    {
+      "capability": "快捷推理",
+      "call": "model(source, conf=0.25, save=True, project=..., name=...)",
+      "note": "等价于 predict，save=True 直接把标注图写到 project/name"
+    },
+    {
+      "capability": "结果读取",
+      "call": "r = results[0]; r.boxes.xyxy / r.boxes.conf / r.boxes.cls",
+      "note": "xyxy 是左上右下坐标，conf 是置信度，cls 是类别索引"
+    },
+    {
+      "capability": "可视化",
+      "call": "r.plot()",
+      "note": "返回画好框的 BGR 图像（可直接 cv2.imwrite）"
+    },
+    {
+      "capability": "类别名",
+      "call": "r.names",
+      "note": "dict{index: name}，COCO 为 80 类"
+    },
+    {
+      "capability": "训练",
+      "call": "model.train(data=\"data.yaml\", epochs=50, imgsz=640, batch=16, device=\"0\")",
+      "note": "project/name 决定输出目录；会生成 results.png、PR 曲线、混淆矩阵"
+    },
+    {
+      "capability": "验证",
+      "call": "model.val(data=\"data.yaml\", split=\"val\")",
+      "note": "返回 mAP50 / mAP50-95 / precision / recall / per-class 指标"
+    },
+    {
+      "capability": "导出",
+      "call": "model.export(format=\"onnx\", half=True, int8=False, imgsz=640)",
+      "note": "支持 onnx / torchscript / openvino / engine(TensorRT) / tflite 等"
+    },
+    {
+      "capability": "断点续训",
+      "call": "YOLO(\"runs/detect/train/weights/last.pt\").train(resume=True)",
+      "note": "从上次的 last.pt 继续训练"
+    },
+    {
+      "capability": "模型信息",
+      "call": "model.model.info()",
+      "note": "打印各层参数量与 GFLOPs"
+    }
+  ]
+}

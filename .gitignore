@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# 运行期临时目录（本机调试用）
+.tmp/
+.pyshim/
+.venv/
+
+# MNIST 原始数据（首次运行自动下载，无需入库）
+task3/data/*.gz
+task3/data/*.ubyte
+
+# COCO 检测缓存（运行时自动重建）
+task2/outputs/data/cache/*.pkl
+
+# task-4 无人机数据集与预训练权重（约 236 MB，用 src/fetch_dataset.py 可重新下载）
+task4_yolo/dataset/
+task4_yolo/weights/
+
+# task-2 的模拟素材（官方素材缺失时的备用，可用 make_assets.py 重新生成）
+task2/assets/
+
+# 提交材料包（本地用 tools/build_submission.py 生成，单独发邮件，不进仓库）
+提交/
+
+# 系统文件
+Thumbs.db
+.DS_Store

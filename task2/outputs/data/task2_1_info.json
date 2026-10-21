@@ -1,0 +1,27 @@
+{
+  "file": "example1.jpg",
+  "shape_hwc": [
+    584,
+    1036,
+    3
+  ],
+  "dtype": "uint8",
+  "cv2_channel_order": "BGR",
+  "pillow_channel_order": "RGB",
+  "mean": {
+    "B": 198.109,
+    "G": 159.676,
+    "R": 111.58
+  },
+  "std": {
+    "B": 38.948,
+    "G": 33.931,
+    "R": 34.042
+  },
+  "max_channel_value": {
+    "B": 255,
+    "G": 255,
+    "R": 255
+  },
+  "gray_mean": 149.651
+}

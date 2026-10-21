@@ -1,0 +1,108 @@
+{
+  "weights": "yolov8n.pt",
+  "imgsz": 640,
+  "conf": 0.25,
+  "iou": 0.45,
+  "images": {
+    "coco-bear.jpg": {
+      "n_objects": 1,
+      "detections": [
+        {
+          "class": "bear",
+          "conf": 0.9514,
+          "xyxy": [
+            30.1,
+            75.3,
+            581.0,
+            638.9
+          ]
+        }
+      ],
+      "speed_ms": {
+        "preprocess": 1.5,
+        "inference": 38.5,
+        "postprocess": 0.9
+      }
+    },
+    "coco-bus.jpg": {
+      "n_objects": 4,
+      "detections": [
+        {
+          "class": "bus",
+          "conf": 0.9302,
+          "xyxy": [
+            101.1,
+            21.2,
+            579.2,
+            374.8
+          ]
+        },
+        {
+          "class": "person",
+          "conf": 0.4938,
+          "xyxy": [
+            625.3,
+            208.1,
+            639.8,
+            360.2
+          ]
+        },
+        {
+          "class": "car",
+          "conf": 0.311,
+          "xyxy": [
+            572.6,
+            250.0,
+            597.6,
+            268.2
+          ]
+        },
+        {
+          "class": "traffic light",
+          "conf": 0.2545,
+          "xyxy": [
+            397.4,
+            110.9,
+            425.9,
+            153.3
+          ]
+        }
+      ],
+      "speed_ms": {
+        "preprocess": 0.8,
+        "inference": 37.3,
+        "postprocess": 0.5
+      }
+    },
+    "coco-person.jpg": {
+      "n_objects": 2,
+      "detections": [
+        {
+          "class": "person",
+          "conf": 0.8955,
+          "xyxy": [
+            280.7,
+            43.2,
+            497.3,
+            387.4
+          ]
+        },
+        {
+          "class": "skis",
+          "conf": 0.5513,
+          "xyxy": [
+            210.3,
+            364.2,
+            613.5,
+            399.7
+          ]
+        }
+      ],
+      "speed_ms": {
+        "preprocess": 0.6,
+        "inference": 15.0,
+        "postprocess": 0.5
+      }
+    }
+  }
+}

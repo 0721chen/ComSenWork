@@ -1,0 +1,4234 @@
+{
+  "example3": {
+    "video": "example3.mp4",
+    "size": [
+      700,
+      394
+    ],
+    "fps": 24.05,
+    "tracked_frames": 228,
+    "init_source": "COCO 检测器（sports ball, score=0.64, frame 0）",
+    "init": {
+      "frame": 0,
+      "x": 356.1,
+      "y": 68.7,
+      "r": 58.2
+    },
+    "detect_step": 2,
+    "ref_step": 1,
+    "metrics": {
+      "csrt": {
+        "mean_err_px": 15.02,
+        "median_err_px": 14.89,
+        "max_err_px": 37.6,
+        "p95_err_px": 27.22,
+        "precision_20px": 0.798,
+        "success_iou50": 1.0,
+        "n_eval_frames": 228
+      },
+      "kcf": {
+        "mean_err_px": 31.69,
+        "median_err_px": 32.47,
+        "max_err_px": 53.62,
+        "p95_err_px": 43.35,
+        "precision_20px": 0.101,
+        "success_iou50": 0.785,
+        "n_eval_frames": 228
+      },
+      "hybrid": {
+        "mean_err_px": 6.66,
+        "median_err_px": 4.57,
+        "max_err_px": 25.75,
+        "p95_err_px": 18.87,
+        "precision_20px": 0.956,
+        "success_iou50": 1.0,
+        "n_eval_frames": 228
+      },
+      "csrt_unamb": {
+        "mean_err_px": 15.02,
+        "median_err_px": 14.89,
+        "max_err_px": 37.6,
+        "p95_err_px": 27.22,
+        "precision_20px": 0.798,
+        "success_iou50": 1.0,
+        "n_eval_frames": 228
+      },
+      "kcf_unamb": {
+        "mean_err_px": 31.69,
+        "median_err_px": 32.47,
+        "max_err_px": 53.62,
+        "p95_err_px": 43.35,
+        "precision_20px": 0.101,
+        "success_iou50": 0.785,
+        "n_eval_frames": 228
+      },
+      "hybrid_unamb": {
+        "mean_err_px": 6.66,
+        "median_err_px": 4.57,
+        "max_err_px": 25.75,
+        "p95_err_px": 18.87,
+        "precision_20px": 0.956,
+        "success_iou50": 1.0,
+        "n_eval_frames": 228
+      },
+      "ambiguous_frames": 0,
+      "csrt_lost_rate": 0.0,
+      "kcf_lost_rate": 0.0,
+      "hybrid_events": {
+        "reinit": 0,
+        "predict": 0,
+        "coco_detect": 113,
+        "appearance_detect": 115
+      },
+      "reference_coverage": 1.004,
+      "reference": "COCO sports-ball detector"
+    },
+    "per_frame_error": [
+      {
+        "frame": 0,
+        "err_csrt": 1.3,
+        "err_hybrid": 1.3,
+        "state": "init"
+      },
+      {
+        "frame": 1,
+        "err_csrt": 3.7,
+        "err_hybrid": 15.7,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 2,
+        "err_csrt": 3.3,
+        "err_hybrid": 18.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 3,
+        "err_csrt": 4.0,
+        "err_hybrid": 16.4,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 4,
+        "err_csrt": 3.3,
+        "err_hybrid": 19.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 5,
+        "err_csrt": 6.2,
+        "err_hybrid": 18.7,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 6,
+        "err_csrt": 9.0,
+        "err_hybrid": 22.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 7,
+        "err_csrt": 11.5,
+        "err_hybrid": 22.5,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 8,
+        "err_csrt": 11.3,
+        "err_hybrid": 24.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 9,
+        "err_csrt": 11.7,
+        "err_hybrid": 25.7,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 10,
+        "err_csrt": 11.4,
+        "err_hybrid": 24.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 11,
+        "err_csrt": 7.1,
+        "err_hybrid": 20.7,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 12,
+        "err_csrt": 21.9,
+        "err_hybrid": 10.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 13,
+        "err_csrt": 32.0,
+        "err_hybrid": 20.5,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 14,
+        "err_csrt": 37.6,
+        "err_hybrid": 18.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 15,
+        "err_csrt": 37.2,
+        "err_hybrid": 25.0,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 16,
+        "err_csrt": 31.5,
+        "err_hybrid": 15.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 17,
+        "err_csrt": 34.1,
+        "err_hybrid": 21.6,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 18,
+        "err_csrt": 31.1,
+        "err_hybrid": 17.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 19,
+        "err_csrt": 27.6,
+        "err_hybrid": 15.2,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 20,
+        "err_csrt": 27.1,
+        "err_hybrid": 12.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 21,
+        "err_csrt": 27.0,
+        "err_hybrid": 15.3,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 22,
+        "err_csrt": 25.9,
+        "err_hybrid": 8.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 23,
+        "err_csrt": 26.3,
+        "err_hybrid": 14.1,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 24,
+        "err_csrt": 24.4,
+        "err_hybrid": 8.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 25,
+        "err_csrt": 21.5,
+        "err_hybrid": 10.5,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 26,
+        "err_csrt": 21.7,
+        "err_hybrid": 4.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 27,
+        "err_csrt": 21.1,
+        "err_hybrid": 10.2,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 28,
+        "err_csrt": 17.5,
+        "err_hybrid": 3.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 29,
+        "err_csrt": 16.3,
+        "err_hybrid": 5.3,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 30,
+        "err_csrt": 15.9,
+        "err_hybrid": 0.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 31,
+        "err_csrt": 14.8,
+        "err_hybrid": 4.0,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 32,
+        "err_csrt": 13.2,
+        "err_hybrid": 1.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 33,
+        "err_csrt": 11.6,
+        "err_hybrid": 3.5,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 34,
+        "err_csrt": 10.3,
+        "err_hybrid": 7.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 35,
+        "err_csrt": 11.7,
+        "err_hybrid": 0.6,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 36,
+        "err_csrt": 8.8,
+        "err_hybrid": 6.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 37,
+        "err_csrt": 7.0,
+        "err_hybrid": 6.2,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 38,
+        "err_csrt": 8.1,
+        "err_hybrid": 8.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 39,
+        "err_csrt": 6.8,
+        "err_hybrid": 5.1,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 40,
+        "err_csrt": 5.1,
+        "err_hybrid": 11.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 41,
+        "err_csrt": 1.3,
+        "err_hybrid": 10.0,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 42,
+        "err_csrt": 0.9,
+        "err_hybrid": 12.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 43,
+        "err_csrt": 3.5,
+        "err_hybrid": 15.6,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 44,
+        "err_csrt": 4.7,
+        "err_hybrid": 15.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 45,
+        "err_csrt": 5.8,
+        "err_hybrid": 18.9,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 46,
+        "err_csrt": 4.7,
+        "err_hybrid": 20.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 47,
+        "err_csrt": 3.9,
+        "err_hybrid": 18.1,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 48,
+        "err_csrt": 5.5,
+        "err_hybrid": 17.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 49,
+        "err_csrt": 3.2,
+        "err_hybrid": 12.2,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 50,
+        "err_csrt": 23.4,
+        "err_hybrid": 9.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 51,
+        "err_csrt": 29.1,
+        "err_hybrid": 15.9,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 52,
+        "err_csrt": 32.9,
+        "err_hybrid": 14.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 53,
+        "err_csrt": 31.4,
+        "err_hybrid": 17.4,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 54,
+        "err_csrt": 24.5,
+        "err_hybrid": 9.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 55,
+        "err_csrt": 27.3,
+        "err_hybrid": 14.6,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 56,
+        "err_csrt": 26.7,
+        "err_hybrid": 11.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 57,
+        "err_csrt": 23.9,
+        "err_hybrid": 11.3,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 58,
+        "err_csrt": 24.4,
+        "err_hybrid": 9.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 59,
+        "err_csrt": 21.4,
+        "err_hybrid": 9.6,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 60,
+        "err_csrt": 18.1,
+        "err_hybrid": 4.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 61,
+        "err_csrt": 19.4,
+        "err_hybrid": 5.4,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 62,
+        "err_csrt": 17.9,
+        "err_hybrid": 3.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 63,
+        "err_csrt": 17.2,
+        "err_hybrid": 4.2,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 64,
+        "err_csrt": 15.7,
+        "err_hybrid": 0.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 65,
+        "err_csrt": 14.7,
+        "err_hybrid": 1.3,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 66,
+        "err_csrt": 13.6,
+        "err_hybrid": 1.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 67,
+        "err_csrt": 11.7,
+        "err_hybrid": 2.1,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 68,
+        "err_csrt": 11.3,
+        "err_hybrid": 5.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 69,
+        "err_csrt": 9.1,
+        "err_hybrid": 3.3,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 70,
+        "err_csrt": 6.4,
+        "err_hybrid": 11.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 71,
+        "err_csrt": 9.1,
+        "err_hybrid": 3.8,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 72,
+        "err_csrt": 2.4,
+        "err_hybrid": 14.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 73,
+        "err_csrt": 6.1,
+        "err_hybrid": 7.7,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 74,
+        "err_csrt": 4.3,
+        "err_hybrid": 11.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 75,
+        "err_csrt": 0.8,
+        "err_hybrid": 12.7,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 76,
+        "err_csrt": 1.4,
+        "err_hybrid": 15.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 77,
+        "err_csrt": 0.9,
+        "err_hybrid": 13.5,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 78,
+        "err_csrt": 4.3,
+        "err_hybrid": 7.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 79,
+        "err_csrt": 19.4,
+        "err_hybrid": 6.9,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 80,
+        "err_csrt": 25.6,
+        "err_hybrid": 8.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 81,
+        "err_csrt": 27.5,
+        "err_hybrid": 14.6,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 82,
+        "err_csrt": 26.0,
+        "err_hybrid": 10.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 83,
+        "err_csrt": 24.5,
+        "err_hybrid": 11.4,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 84,
+        "err_csrt": 23.7,
+        "err_hybrid": 8.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 85,
+        "err_csrt": 22.4,
+        "err_hybrid": 9.1,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 86,
+        "err_csrt": 21.2,
+        "err_hybrid": 6.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 87,
+        "err_csrt": 18.0,
+        "err_hybrid": 5.9,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 88,
+        "err_csrt": 17.7,
+        "err_hybrid": 0.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 89,
+        "err_csrt": 18.3,
+        "err_hybrid": 7.0,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 90,
+        "err_csrt": 15.1,
+        "err_hybrid": 0.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 91,
+        "err_csrt": 15.0,
+        "err_hybrid": 2.7,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 92,
+        "err_csrt": 16.2,
+        "err_hybrid": 0.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 93,
+        "err_csrt": 11.8,
+        "err_hybrid": 0.8,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 94,
+        "err_csrt": 10.6,
+        "err_hybrid": 5.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 95,
+        "err_csrt": 8.7,
+        "err_hybrid": 3.6,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 96,
+        "err_csrt": 9.7,
+        "err_hybrid": 3.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 97,
+        "err_csrt": 4.6,
+        "err_hybrid": 8.7,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 98,
+        "err_csrt": 5.8,
+        "err_hybrid": 10.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 99,
+        "err_csrt": 6.1,
+        "err_hybrid": 9.0,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 100,
+        "err_csrt": 3.8,
+        "err_hybrid": 8.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 101,
+        "err_csrt": 4.8,
+        "err_hybrid": 8.9,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 102,
+        "err_csrt": 16.5,
+        "err_hybrid": 3.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 103,
+        "err_csrt": 21.8,
+        "err_hybrid": 9.1,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 104,
+        "err_csrt": 25.4,
+        "err_hybrid": 10.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 105,
+        "err_csrt": 23.9,
+        "err_hybrid": 10.3,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 106,
+        "err_csrt": 23.8,
+        "err_hybrid": 7.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 107,
+        "err_csrt": 22.2,
+        "err_hybrid": 8.3,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 108,
+        "err_csrt": 19.9,
+        "err_hybrid": 5.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 109,
+        "err_csrt": 16.7,
+        "err_hybrid": 4.5,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 110,
+        "err_csrt": 15.7,
+        "err_hybrid": 0.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 111,
+        "err_csrt": 17.0,
+        "err_hybrid": 4.6,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 112,
+        "err_csrt": 16.4,
+        "err_hybrid": 0.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 113,
+        "err_csrt": 14.9,
+        "err_hybrid": 1.8,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 114,
+        "err_csrt": 11.5,
+        "err_hybrid": 2.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 115,
+        "err_csrt": 10.2,
+        "err_hybrid": 3.8,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 116,
+        "err_csrt": 9.4,
+        "err_hybrid": 5.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 117,
+        "err_csrt": 8.1,
+        "err_hybrid": 5.1,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 118,
+        "err_csrt": 9.1,
+        "err_hybrid": 8.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 119,
+        "err_csrt": 7.7,
+        "err_hybrid": 7.2,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 120,
+        "err_csrt": 7.6,
+        "err_hybrid": 6.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 121,
+        "err_csrt": 7.4,
+        "err_hybrid": 5.3,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 122,
+        "err_csrt": 17.4,
+        "err_hybrid": 3.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 123,
+        "err_csrt": 22.8,
+        "err_hybrid": 10.8,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 124,
+        "err_csrt": 24.0,
+        "err_hybrid": 7.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 125,
+        "err_csrt": 23.1,
+        "err_hybrid": 8.5,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 126,
+        "err_csrt": 20.8,
+        "err_hybrid": 5.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 127,
+        "err_csrt": 19.0,
+        "err_hybrid": 5.3,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 128,
+        "err_csrt": 19.1,
+        "err_hybrid": 4.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 129,
+        "err_csrt": 15.7,
+        "err_hybrid": 3.6,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 130,
+        "err_csrt": 14.6,
+        "err_hybrid": 1.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 131,
+        "err_csrt": 14.6,
+        "err_hybrid": 3.1,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 132,
+        "err_csrt": 14.1,
+        "err_hybrid": 4.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 133,
+        "err_csrt": 14.0,
+        "err_hybrid": 1.0,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 134,
+        "err_csrt": 9.5,
+        "err_hybrid": 5.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 135,
+        "err_csrt": 9.4,
+        "err_hybrid": 4.0,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 136,
+        "err_csrt": 8.7,
+        "err_hybrid": 7.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 137,
+        "err_csrt": 6.9,
+        "err_hybrid": 5.8,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 138,
+        "err_csrt": 6.5,
+        "err_hybrid": 4.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 139,
+        "err_csrt": 13.4,
+        "err_hybrid": 0.8,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 140,
+        "err_csrt": 19.8,
+        "err_hybrid": 3.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 141,
+        "err_csrt": 23.1,
+        "err_hybrid": 8.8,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 142,
+        "err_csrt": 22.3,
+        "err_hybrid": 4.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 143,
+        "err_csrt": 19.4,
+        "err_hybrid": 6.7,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 144,
+        "err_csrt": 18.5,
+        "err_hybrid": 1.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 145,
+        "err_csrt": 17.7,
+        "err_hybrid": 4.9,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 146,
+        "err_csrt": 15.5,
+        "err_hybrid": 0.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 147,
+        "err_csrt": 15.2,
+        "err_hybrid": 2.2,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 148,
+        "err_csrt": 15.8,
+        "err_hybrid": 0.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 149,
+        "err_csrt": 12.6,
+        "err_hybrid": 1.8,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 150,
+        "err_csrt": 11.8,
+        "err_hybrid": 5.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 151,
+        "err_csrt": 9.9,
+        "err_hybrid": 3.7,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 152,
+        "err_csrt": 8.0,
+        "err_hybrid": 5.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 153,
+        "err_csrt": 7.7,
+        "err_hybrid": 5.3,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 154,
+        "err_csrt": 10.9,
+        "err_hybrid": 0.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 155,
+        "err_csrt": 17.5,
+        "err_hybrid": 4.2,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 156,
+        "err_csrt": 20.9,
+        "err_hybrid": 4.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 157,
+        "err_csrt": 21.8,
+        "err_hybrid": 7.8,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 158,
+        "err_csrt": 18.0,
+        "err_hybrid": 3.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 159,
+        "err_csrt": 17.6,
+        "err_hybrid": 4.6,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 160,
+        "err_csrt": 16.5,
+        "err_hybrid": 1.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 161,
+        "err_csrt": 15.9,
+        "err_hybrid": 2.5,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 162,
+        "err_csrt": 15.2,
+        "err_hybrid": 1.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 163,
+        "err_csrt": 13.6,
+        "err_hybrid": 1.6,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 164,
+        "err_csrt": 12.2,
+        "err_hybrid": 4.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 165,
+        "err_csrt": 9.7,
+        "err_hybrid": 3.7,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 166,
+        "err_csrt": 9.3,
+        "err_hybrid": 3.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 167,
+        "err_csrt": 10.0,
+        "err_hybrid": 4.2,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 168,
+        "err_csrt": 13.1,
+        "err_hybrid": 1.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 169,
+        "err_csrt": 18.1,
+        "err_hybrid": 4.3,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 170,
+        "err_csrt": 18.8,
+        "err_hybrid": 2.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 171,
+        "err_csrt": 19.2,
+        "err_hybrid": 6.4,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 172,
+        "err_csrt": 16.9,
+        "err_hybrid": 2.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 173,
+        "err_csrt": 16.5,
+        "err_hybrid": 2.8,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 174,
+        "err_csrt": 17.5,
+        "err_hybrid": 1.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 175,
+        "err_csrt": 14.4,
+        "err_hybrid": 1.5,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 176,
+        "err_csrt": 13.2,
+        "err_hybrid": 2.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 177,
+        "err_csrt": 12.8,
+        "err_hybrid": 2.0,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 178,
+        "err_csrt": 10.4,
+        "err_hybrid": 3.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 179,
+        "err_csrt": 12.3,
+        "err_hybrid": 2.0,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 180,
+        "err_csrt": 13.9,
+        "err_hybrid": 2.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 181,
+        "err_csrt": 17.5,
+        "err_hybrid": 4.5,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 182,
+        "err_csrt": 19.5,
+        "err_hybrid": 2.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 183,
+        "err_csrt": 18.4,
+        "err_hybrid": 5.4,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 184,
+        "err_csrt": 16.3,
+        "err_hybrid": 3.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 185,
+        "err_csrt": 16.2,
+        "err_hybrid": 5.3,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 186,
+        "err_csrt": 15.3,
+        "err_hybrid": 1.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 187,
+        "err_csrt": 13.5,
+        "err_hybrid": 2.6,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 188,
+        "err_csrt": 12.3,
+        "err_hybrid": 2.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 189,
+        "err_csrt": 11.6,
+        "err_hybrid": 3.0,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 190,
+        "err_csrt": 13.4,
+        "err_hybrid": 0.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 191,
+        "err_csrt": 13.8,
+        "err_hybrid": 2.0,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 192,
+        "err_csrt": 17.1,
+        "err_hybrid": 2.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 193,
+        "err_csrt": 18.4,
+        "err_hybrid": 6.3,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 194,
+        "err_csrt": 17.7,
+        "err_hybrid": 2.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 195,
+        "err_csrt": 16.3,
+        "err_hybrid": 4.1,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 196,
+        "err_csrt": 15.9,
+        "err_hybrid": 1.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 197,
+        "err_csrt": 15.0,
+        "err_hybrid": 0.9,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 198,
+        "err_csrt": 13.0,
+        "err_hybrid": 3.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 199,
+        "err_csrt": 12.3,
+        "err_hybrid": 2.3,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 200,
+        "err_csrt": 12.4,
+        "err_hybrid": 2.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 201,
+        "err_csrt": 13.4,
+        "err_hybrid": 2.6,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 202,
+        "err_csrt": 14.6,
+        "err_hybrid": 1.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 203,
+        "err_csrt": 17.0,
+        "err_hybrid": 3.9,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 204,
+        "err_csrt": 16.2,
+        "err_hybrid": 1.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 205,
+        "err_csrt": 16.5,
+        "err_hybrid": 4.2,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 206,
+        "err_csrt": 16.0,
+        "err_hybrid": 0.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 207,
+        "err_csrt": 15.7,
+        "err_hybrid": 2.5,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 208,
+        "err_csrt": 14.8,
+        "err_hybrid": 1.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 209,
+        "err_csrt": 13.2,
+        "err_hybrid": 1.9,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 210,
+        "err_csrt": 12.6,
+        "err_hybrid": 0.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 211,
+        "err_csrt": 12.4,
+        "err_hybrid": 2.1,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 212,
+        "err_csrt": 14.9,
+        "err_hybrid": 1.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 213,
+        "err_csrt": 17.1,
+        "err_hybrid": 4.2,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 214,
+        "err_csrt": 15.7,
+        "err_hybrid": 2.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 215,
+        "err_csrt": 14.6,
+        "err_hybrid": 2.1,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 216,
+        "err_csrt": 14.2,
+        "err_hybrid": 0.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 217,
+        "err_csrt": 13.3,
+        "err_hybrid": 0.5,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 218,
+        "err_csrt": 13.9,
+        "err_hybrid": 1.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 219,
+        "err_csrt": 13.4,
+        "err_hybrid": 2.7,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 220,
+        "err_csrt": 12.5,
+        "err_hybrid": 1.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 221,
+        "err_csrt": 14.8,
+        "err_hybrid": 2.5,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 222,
+        "err_csrt": 15.3,
+        "err_hybrid": 2.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 223,
+        "err_csrt": 16.4,
+        "err_hybrid": 3.7,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 224,
+        "err_csrt": 15.6,
+        "err_hybrid": 1.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 225,
+        "err_csrt": 15.5,
+        "err_hybrid": 2.9,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 226,
+        "err_csrt": 13.3,
+        "err_hybrid": 2.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 227,
+        "err_csrt": 14.0,
+        "err_hybrid": 1.6,
+        "state": "det(appearance)"
+      },
+      {
+        "frame": 228,
+        "err_csrt": null,
+        "err_hybrid": NaN,
+        "state": ""
+      }
+    ],
+    "output_video": "D:\\md\\task2\\outputs\\videos\\example3_tracking.mp4"
+  },
+  "example4": {
+    "video": "example4.mp4",
+    "size": [
+      1920,
+      1080
+    ],
+    "fps": 60.14,
+    "tracked_frames": 580,
+    "init_source": "COCO 检测器（sports ball, score=0.88, frame 0）",
+    "init": {
+      "frame": 0,
+      "x": 1576.6,
+      "y": 933.4,
+      "r": 148.9
+    },
+    "detect_step": 2,
+    "ref_step": 1,
+    "metrics": {
+      "csrt": {
+        "mean_err_px": 44.47,
+        "median_err_px": 43.32,
+        "max_err_px": 130.04,
+        "p95_err_px": 92.85,
+        "precision_20px": 0.105,
+        "success_iou50": 0.877,
+        "n_eval_frames": 447
+      },
+      "kcf": {
+        "mean_err_px": 19.82,
+        "median_err_px": 19.82,
+        "max_err_px": 38.21,
+        "p95_err_px": 36.37,
+        "precision_20px": 0.5,
+        "success_iou50": 1.0,
+        "n_eval_frames": 2
+      },
+      "hybrid": {
+        "mean_err_px": 13.59,
+        "median_err_px": 12.39,
+        "max_err_px": 42.39,
+        "p95_err_px": 26.64,
+        "precision_20px": 0.83,
+        "success_iou50": 0.993,
+        "n_eval_frames": 447
+      },
+      "csrt_unamb": {
+        "mean_err_px": 45.41,
+        "median_err_px": 43.75,
+        "max_err_px": 130.04,
+        "p95_err_px": 94.1,
+        "precision_20px": 0.108,
+        "success_iou50": 0.855,
+        "n_eval_frames": 372
+      },
+      "kcf_unamb": {
+        "mean_err_px": 19.82,
+        "median_err_px": 19.82,
+        "max_err_px": 38.21,
+        "p95_err_px": 36.37,
+        "precision_20px": 0.5,
+        "success_iou50": 1.0,
+        "n_eval_frames": 2
+      },
+      "hybrid_unamb": {
+        "mean_err_px": 13.52,
+        "median_err_px": 12.35,
+        "max_err_px": 42.39,
+        "p95_err_px": 27.99,
+        "precision_20px": 0.839,
+        "success_iou50": 0.992,
+        "n_eval_frames": 372
+      },
+      "ambiguous_frames": 75,
+      "csrt_lost_rate": 0.019,
+      "kcf_lost_rate": 0.997,
+      "hybrid_events": {
+        "reinit": 10,
+        "predict": 11,
+        "coco_detect": 234,
+        "appearance_detect": 0
+      },
+      "reference_coverage": 0.771,
+      "reference": "COCO sports-ball detector"
+    },
+    "per_frame_error": [
+      {
+        "frame": 0,
+        "err_csrt": 1.4,
+        "err_hybrid": 1.4,
+        "state": "init"
+      },
+      {
+        "frame": 1,
+        "err_csrt": 11.7,
+        "err_hybrid": 38.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 2,
+        "err_csrt": 14.3,
+        "err_hybrid": 31.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 3,
+        "err_csrt": 12.4,
+        "err_hybrid": 26.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 4,
+        "err_csrt": 14.1,
+        "err_hybrid": 42.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 5,
+        "err_csrt": 12.1,
+        "err_hybrid": 34.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 6,
+        "err_csrt": 25.6,
+        "err_hybrid": 42.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 7,
+        "err_csrt": 18.3,
+        "err_hybrid": 32.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 8,
+        "err_csrt": 13.3,
+        "err_hybrid": 35.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 9,
+        "err_csrt": 20.6,
+        "err_hybrid": 31.9,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 10,
+        "err_csrt": 21.1,
+        "err_hybrid": 25.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 11,
+        "err_csrt": 23.4,
+        "err_hybrid": 30.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 12,
+        "err_csrt": 21.4,
+        "err_hybrid": 35.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 13,
+        "err_csrt": 16.1,
+        "err_hybrid": 33.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 14,
+        "err_csrt": 22.1,
+        "err_hybrid": 29.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 15,
+        "err_csrt": 26.2,
+        "err_hybrid": 28.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 16,
+        "err_csrt": 30.8,
+        "err_hybrid": 25.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 17,
+        "err_csrt": 27.2,
+        "err_hybrid": 26.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 18,
+        "err_csrt": 23.5,
+        "err_hybrid": 25.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 19,
+        "err_csrt": 22.1,
+        "err_hybrid": 25.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 20,
+        "err_csrt": 22.1,
+        "err_hybrid": 25.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 21,
+        "err_csrt": 16.7,
+        "err_hybrid": 21.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 22,
+        "err_csrt": 20.2,
+        "err_hybrid": 17.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 23,
+        "err_csrt": 20.4,
+        "err_hybrid": 16.5,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 24,
+        "err_csrt": 20.0,
+        "err_hybrid": 14.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 25,
+        "err_csrt": 20.4,
+        "err_hybrid": 16.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 26,
+        "err_csrt": 20.4,
+        "err_hybrid": 13.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 27,
+        "err_csrt": 19.3,
+        "err_hybrid": 15.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 28,
+        "err_csrt": 17.0,
+        "err_hybrid": 19.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 29,
+        "err_csrt": 14.6,
+        "err_hybrid": 14.9,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 30,
+        "err_csrt": 11.2,
+        "err_hybrid": 20.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 31,
+        "err_csrt": 7.5,
+        "err_hybrid": 14.9,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 32,
+        "err_csrt": 8.5,
+        "err_hybrid": 15.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 33,
+        "err_csrt": 7.5,
+        "err_hybrid": 14.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 34,
+        "err_csrt": 17.0,
+        "err_hybrid": 11.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 35,
+        "err_csrt": 15.5,
+        "err_hybrid": 19.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 36,
+        "err_csrt": 4.4,
+        "err_hybrid": 25.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 65,
+        "err_csrt": 25.3,
+        "err_hybrid": 14.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 66,
+        "err_csrt": 34.3,
+        "err_hybrid": 21.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 67,
+        "err_csrt": 33.5,
+        "err_hybrid": 14.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 68,
+        "err_csrt": 32.1,
+        "err_hybrid": 17.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 69,
+        "err_csrt": 11.4,
+        "err_hybrid": 13.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 70,
+        "err_csrt": 27.5,
+        "err_hybrid": 11.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 71,
+        "err_csrt": 43.9,
+        "err_hybrid": 9.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 72,
+        "err_csrt": 39.7,
+        "err_hybrid": 3.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 73,
+        "err_csrt": 55.8,
+        "err_hybrid": 12.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 74,
+        "err_csrt": 45.7,
+        "err_hybrid": 17.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 75,
+        "err_csrt": 26.6,
+        "err_hybrid": 15.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 81,
+        "err_csrt": 23.8,
+        "err_hybrid": 7.5,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 82,
+        "err_csrt": 37.5,
+        "err_hybrid": 20.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 83,
+        "err_csrt": 38.0,
+        "err_hybrid": 11.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 84,
+        "err_csrt": 40.1,
+        "err_hybrid": 13.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 85,
+        "err_csrt": 44.5,
+        "err_hybrid": 13.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 86,
+        "err_csrt": 42.5,
+        "err_hybrid": 19.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 87,
+        "err_csrt": 44.1,
+        "err_hybrid": 17.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 88,
+        "err_csrt": 49.8,
+        "err_hybrid": 28.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 89,
+        "err_csrt": 32.6,
+        "err_hybrid": 18.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 90,
+        "err_csrt": 46.8,
+        "err_hybrid": 16.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 91,
+        "err_csrt": 51.6,
+        "err_hybrid": 14.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 92,
+        "err_csrt": 34.3,
+        "err_hybrid": 11.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 93,
+        "err_csrt": 41.0,
+        "err_hybrid": 16.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 94,
+        "err_csrt": 48.0,
+        "err_hybrid": 21.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 95,
+        "err_csrt": 51.3,
+        "err_hybrid": 17.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 96,
+        "err_csrt": 46.1,
+        "err_hybrid": 15.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 97,
+        "err_csrt": 60.4,
+        "err_hybrid": 19.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 98,
+        "err_csrt": 46.9,
+        "err_hybrid": 22.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 99,
+        "err_csrt": 37.8,
+        "err_hybrid": 20.5,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 100,
+        "err_csrt": 34.7,
+        "err_hybrid": 19.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 101,
+        "err_csrt": 38.8,
+        "err_hybrid": 19.9,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 102,
+        "err_csrt": 61.1,
+        "err_hybrid": 34.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 103,
+        "err_csrt": 55.8,
+        "err_hybrid": 19.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 104,
+        "err_csrt": 111.2,
+        "err_hybrid": 24.2,
+        "state": "reinit(coco)"
+      },
+      {
+        "frame": 105,
+        "err_csrt": 130.0,
+        "err_hybrid": 18.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 106,
+        "err_csrt": 118.7,
+        "err_hybrid": 12.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 107,
+        "err_csrt": 98.8,
+        "err_hybrid": 16.5,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 108,
+        "err_csrt": 54.9,
+        "err_hybrid": 5.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 109,
+        "err_csrt": 53.0,
+        "err_hybrid": 14.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 110,
+        "err_csrt": 52.3,
+        "err_hybrid": 17.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 111,
+        "err_csrt": 54.7,
+        "err_hybrid": 16.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 112,
+        "err_csrt": 55.6,
+        "err_hybrid": 22.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 113,
+        "err_csrt": 55.0,
+        "err_hybrid": 19.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 114,
+        "err_csrt": 54.3,
+        "err_hybrid": 17.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 115,
+        "err_csrt": 45.0,
+        "err_hybrid": 18.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 116,
+        "err_csrt": 35.8,
+        "err_hybrid": 4.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 117,
+        "err_csrt": 28.2,
+        "err_hybrid": 13.5,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 118,
+        "err_csrt": 30.4,
+        "err_hybrid": 12.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 119,
+        "err_csrt": 35.1,
+        "err_hybrid": 1.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 120,
+        "err_csrt": 37.0,
+        "err_hybrid": 2.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 121,
+        "err_csrt": 32.5,
+        "err_hybrid": 2.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 122,
+        "err_csrt": 38.4,
+        "err_hybrid": 3.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 123,
+        "err_csrt": 40.9,
+        "err_hybrid": 3.5,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 124,
+        "err_csrt": 41.7,
+        "err_hybrid": 5.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 125,
+        "err_csrt": 44.9,
+        "err_hybrid": 4.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 126,
+        "err_csrt": 43.5,
+        "err_hybrid": 4.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 127,
+        "err_csrt": 49.8,
+        "err_hybrid": 3.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 128,
+        "err_csrt": 54.0,
+        "err_hybrid": 13.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 129,
+        "err_csrt": 55.9,
+        "err_hybrid": 6.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 130,
+        "err_csrt": 59.4,
+        "err_hybrid": 13.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 131,
+        "err_csrt": 67.7,
+        "err_hybrid": 9.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 132,
+        "err_csrt": 67.4,
+        "err_hybrid": 4.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 133,
+        "err_csrt": 62.7,
+        "err_hybrid": 6.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 134,
+        "err_csrt": 61.8,
+        "err_hybrid": 8.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 135,
+        "err_csrt": 58.8,
+        "err_hybrid": 7.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 136,
+        "err_csrt": 47.0,
+        "err_hybrid": 3.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 137,
+        "err_csrt": 40.1,
+        "err_hybrid": 4.9,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 138,
+        "err_csrt": 34.3,
+        "err_hybrid": 8.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 139,
+        "err_csrt": 38.7,
+        "err_hybrid": 6.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 140,
+        "err_csrt": 107.6,
+        "err_hybrid": 3.3,
+        "state": "reinit(coco)"
+      },
+      {
+        "frame": 141,
+        "err_csrt": 107.3,
+        "err_hybrid": 5.5,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 142,
+        "err_csrt": 118.7,
+        "err_hybrid": 11.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 143,
+        "err_csrt": 113.5,
+        "err_hybrid": 1.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 144,
+        "err_csrt": 109.6,
+        "err_hybrid": 8.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 145,
+        "err_csrt": 101.4,
+        "err_hybrid": 5.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 146,
+        "err_csrt": 96.4,
+        "err_hybrid": 7.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 147,
+        "err_csrt": 91.8,
+        "err_hybrid": 4.9,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 148,
+        "err_csrt": 94.4,
+        "err_hybrid": 4.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 149,
+        "err_csrt": 92.1,
+        "err_hybrid": 3.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 150,
+        "err_csrt": 87.6,
+        "err_hybrid": 7.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 151,
+        "err_csrt": 90.8,
+        "err_hybrid": 1.9,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 152,
+        "err_csrt": 99.2,
+        "err_hybrid": 11.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 153,
+        "err_csrt": 105.1,
+        "err_hybrid": 8.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 154,
+        "err_csrt": 102.4,
+        "err_hybrid": 7.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 155,
+        "err_csrt": 85.6,
+        "err_hybrid": 8.5,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 156,
+        "err_csrt": 88.1,
+        "err_hybrid": 12.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 157,
+        "err_csrt": 93.9,
+        "err_hybrid": 9.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 158,
+        "err_csrt": 100.6,
+        "err_hybrid": 10.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 159,
+        "err_csrt": 101.5,
+        "err_hybrid": 9.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 160,
+        "err_csrt": 97.8,
+        "err_hybrid": 8.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 161,
+        "err_csrt": 96.6,
+        "err_hybrid": 9.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 162,
+        "err_csrt": 93.5,
+        "err_hybrid": 11.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 163,
+        "err_csrt": 91.3,
+        "err_hybrid": 9.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 164,
+        "err_csrt": 86.8,
+        "err_hybrid": 9.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 165,
+        "err_csrt": 86.9,
+        "err_hybrid": 8.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 166,
+        "err_csrt": 86.5,
+        "err_hybrid": 9.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 167,
+        "err_csrt": 84.6,
+        "err_hybrid": 9.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 168,
+        "err_csrt": 85.8,
+        "err_hybrid": 10.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 174,
+        "err_csrt": 88.3,
+        "err_hybrid": 15.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 175,
+        "err_csrt": 92.7,
+        "err_hybrid": 11.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 176,
+        "err_csrt": 91.8,
+        "err_hybrid": 13.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 177,
+        "err_csrt": 92.4,
+        "err_hybrid": 11.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 178,
+        "err_csrt": 92.9,
+        "err_hybrid": 14.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 179,
+        "err_csrt": 87.1,
+        "err_hybrid": 11.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 180,
+        "err_csrt": 88.8,
+        "err_hybrid": 10.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 181,
+        "err_csrt": 88.4,
+        "err_hybrid": 10.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 182,
+        "err_csrt": 90.1,
+        "err_hybrid": 7.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 183,
+        "err_csrt": 82.8,
+        "err_hybrid": 8.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 184,
+        "err_csrt": 74.5,
+        "err_hybrid": 15.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 185,
+        "err_csrt": 81.3,
+        "err_hybrid": 14.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 186,
+        "err_csrt": 73.2,
+        "err_hybrid": 20.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 187,
+        "err_csrt": 71.4,
+        "err_hybrid": 14.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 188,
+        "err_csrt": 75.5,
+        "err_hybrid": 25.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 189,
+        "err_csrt": 67.8,
+        "err_hybrid": 9.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 190,
+        "err_csrt": 62.0,
+        "err_hybrid": 9.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 191,
+        "err_csrt": 54.9,
+        "err_hybrid": 15.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 192,
+        "err_csrt": 51.4,
+        "err_hybrid": 13.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 193,
+        "err_csrt": 50.8,
+        "err_hybrid": 13.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 194,
+        "err_csrt": 47.3,
+        "err_hybrid": 12.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 195,
+        "err_csrt": 44.9,
+        "err_hybrid": 11.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 196,
+        "err_csrt": 44.1,
+        "err_hybrid": 14.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 197,
+        "err_csrt": 38.5,
+        "err_hybrid": 13.5,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 198,
+        "err_csrt": 37.5,
+        "err_hybrid": 13.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 199,
+        "err_csrt": 34.8,
+        "err_hybrid": 13.5,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 200,
+        "err_csrt": 33.9,
+        "err_hybrid": 12.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 201,
+        "err_csrt": 28.6,
+        "err_hybrid": 12.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 202,
+        "err_csrt": 22.0,
+        "err_hybrid": 16.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 203,
+        "err_csrt": 21.8,
+        "err_hybrid": 13.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 206,
+        "err_csrt": 15.1,
+        "err_hybrid": 13.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 207,
+        "err_csrt": 17.9,
+        "err_hybrid": 11.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 208,
+        "err_csrt": 22.0,
+        "err_hybrid": 6.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 209,
+        "err_csrt": 25.7,
+        "err_hybrid": 8.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 210,
+        "err_csrt": 36.6,
+        "err_hybrid": 17.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 211,
+        "err_csrt": 33.8,
+        "err_hybrid": 10.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 212,
+        "err_csrt": 37.4,
+        "err_hybrid": 25.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 213,
+        "err_csrt": 39.4,
+        "err_hybrid": 17.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 214,
+        "err_csrt": 38.3,
+        "err_hybrid": 26.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 215,
+        "err_csrt": 36.5,
+        "err_hybrid": 22.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 216,
+        "err_csrt": 38.2,
+        "err_hybrid": 22.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 217,
+        "err_csrt": 38.7,
+        "err_hybrid": 22.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 218,
+        "err_csrt": 37.2,
+        "err_hybrid": 23.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 219,
+        "err_csrt": 39.4,
+        "err_hybrid": 23.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 220,
+        "err_csrt": 39.8,
+        "err_hybrid": 25.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 221,
+        "err_csrt": 42.7,
+        "err_hybrid": 24.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 222,
+        "err_csrt": 45.6,
+        "err_hybrid": 30.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 223,
+        "err_csrt": 44.6,
+        "err_hybrid": 25.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 224,
+        "err_csrt": 49.5,
+        "err_hybrid": 20.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 225,
+        "err_csrt": 47.1,
+        "err_hybrid": 21.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 226,
+        "err_csrt": 40.6,
+        "err_hybrid": 30.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 229,
+        "err_csrt": 49.8,
+        "err_hybrid": 30.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 230,
+        "err_csrt": 47.1,
+        "err_hybrid": 26.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 231,
+        "err_csrt": 53.3,
+        "err_hybrid": 25.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 232,
+        "err_csrt": 49.1,
+        "err_hybrid": 16.9,
+        "state": "reinit(coco)"
+      },
+      {
+        "frame": 233,
+        "err_csrt": 48.1,
+        "err_hybrid": 18.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 234,
+        "err_csrt": 53.4,
+        "err_hybrid": 11.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 235,
+        "err_csrt": 46.4,
+        "err_hybrid": 13.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 236,
+        "err_csrt": 50.9,
+        "err_hybrid": 9.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 237,
+        "err_csrt": 52.9,
+        "err_hybrid": 12.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 238,
+        "err_csrt": 50.5,
+        "err_hybrid": 5.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 239,
+        "err_csrt": 53.5,
+        "err_hybrid": 9.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 240,
+        "err_csrt": 54.9,
+        "err_hybrid": 4.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 241,
+        "err_csrt": 55.2,
+        "err_hybrid": 5.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 242,
+        "err_csrt": 57.8,
+        "err_hybrid": 14.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 243,
+        "err_csrt": 50.9,
+        "err_hybrid": 6.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 244,
+        "err_csrt": 57.2,
+        "err_hybrid": 15.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 245,
+        "err_csrt": 47.4,
+        "err_hybrid": 5.5,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 246,
+        "err_csrt": 48.1,
+        "err_hybrid": 6.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 247,
+        "err_csrt": 53.2,
+        "err_hybrid": 1.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 248,
+        "err_csrt": 48.8,
+        "err_hybrid": 13.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 249,
+        "err_csrt": 44.5,
+        "err_hybrid": 4.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 250,
+        "err_csrt": 41.8,
+        "err_hybrid": 11.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 251,
+        "err_csrt": 49.7,
+        "err_hybrid": 5.9,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 252,
+        "err_csrt": 50.1,
+        "err_hybrid": 9.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 253,
+        "err_csrt": 59.7,
+        "err_hybrid": 9.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 254,
+        "err_csrt": 60.4,
+        "err_hybrid": 22.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 255,
+        "err_csrt": 58.0,
+        "err_hybrid": 10.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 256,
+        "err_csrt": 56.9,
+        "err_hybrid": 20.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 257,
+        "err_csrt": 61.6,
+        "err_hybrid": 17.5,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 258,
+        "err_csrt": 59.6,
+        "err_hybrid": 17.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 259,
+        "err_csrt": 56.3,
+        "err_hybrid": 19.5,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 260,
+        "err_csrt": 52.7,
+        "err_hybrid": 21.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 261,
+        "err_csrt": 52.5,
+        "err_hybrid": 19.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 262,
+        "err_csrt": 51.8,
+        "err_hybrid": 24.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 263,
+        "err_csrt": 52.0,
+        "err_hybrid": 20.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 264,
+        "err_csrt": 52.6,
+        "err_hybrid": 17.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 265,
+        "err_csrt": 52.0,
+        "err_hybrid": 17.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 266,
+        "err_csrt": 43.9,
+        "err_hybrid": 13.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 267,
+        "err_csrt": 45.0,
+        "err_hybrid": 16.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 268,
+        "err_csrt": 45.1,
+        "err_hybrid": 10.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 269,
+        "err_csrt": 49.0,
+        "err_hybrid": 12.9,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 272,
+        "err_csrt": 53.9,
+        "err_hybrid": 24.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 273,
+        "err_csrt": 46.6,
+        "err_hybrid": 9.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 274,
+        "err_csrt": 43.3,
+        "err_hybrid": 11.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 275,
+        "err_csrt": 41.5,
+        "err_hybrid": 10.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 278,
+        "err_csrt": 46.8,
+        "err_hybrid": 8.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 279,
+        "err_csrt": 40.5,
+        "err_hybrid": 10.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 280,
+        "err_csrt": 38.5,
+        "err_hybrid": 7.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 281,
+        "err_csrt": 40.9,
+        "err_hybrid": 11.5,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 282,
+        "err_csrt": 41.3,
+        "err_hybrid": 3.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 283,
+        "err_csrt": 42.8,
+        "err_hybrid": 7.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 284,
+        "err_csrt": 43.4,
+        "err_hybrid": 19.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 285,
+        "err_csrt": 42.7,
+        "err_hybrid": 10.5,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 286,
+        "err_csrt": 39.8,
+        "err_hybrid": 12.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 287,
+        "err_csrt": 42.3,
+        "err_hybrid": 12.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 288,
+        "err_csrt": 45.8,
+        "err_hybrid": 8.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 289,
+        "err_csrt": 47.5,
+        "err_hybrid": 10.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 290,
+        "err_csrt": 45.5,
+        "err_hybrid": 13.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 291,
+        "err_csrt": 42.8,
+        "err_hybrid": 12.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 292,
+        "err_csrt": 48.6,
+        "err_hybrid": 18.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 293,
+        "err_csrt": 45.1,
+        "err_hybrid": 13.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 294,
+        "err_csrt": 45.6,
+        "err_hybrid": 16.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 295,
+        "err_csrt": 45.9,
+        "err_hybrid": 14.9,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 296,
+        "err_csrt": 45.6,
+        "err_hybrid": 13.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 297,
+        "err_csrt": 48.5,
+        "err_hybrid": 15.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 300,
+        "err_csrt": 47.2,
+        "err_hybrid": 18.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 301,
+        "err_csrt": 45.8,
+        "err_hybrid": 18.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 302,
+        "err_csrt": 47.4,
+        "err_hybrid": 22.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 303,
+        "err_csrt": 42.6,
+        "err_hybrid": 20.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 304,
+        "err_csrt": 29.8,
+        "err_hybrid": 9.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 305,
+        "err_csrt": 17.2,
+        "err_hybrid": 16.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 306,
+        "err_csrt": 14.8,
+        "err_hybrid": 13.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 307,
+        "err_csrt": 14.2,
+        "err_hybrid": 8.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 308,
+        "err_csrt": 16.5,
+        "err_hybrid": 9.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 309,
+        "err_csrt": 15.6,
+        "err_hybrid": 9.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 310,
+        "err_csrt": 20.3,
+        "err_hybrid": 11.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 311,
+        "err_csrt": 27.2,
+        "err_hybrid": 9.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 312,
+        "err_csrt": 21.6,
+        "err_hybrid": 8.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 313,
+        "err_csrt": 23.3,
+        "err_hybrid": 7.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 314,
+        "err_csrt": 21.7,
+        "err_hybrid": 8.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 315,
+        "err_csrt": 9.3,
+        "err_hybrid": 4.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 318,
+        "err_csrt": 20.2,
+        "err_hybrid": 20.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 319,
+        "err_csrt": 21.6,
+        "err_hybrid": 16.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 320,
+        "err_csrt": 27.1,
+        "err_hybrid": 22.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 321,
+        "err_csrt": 30.1,
+        "err_hybrid": 20.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 322,
+        "err_csrt": 28.1,
+        "err_hybrid": 18.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 323,
+        "err_csrt": 30.0,
+        "err_hybrid": 19.9,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 324,
+        "err_csrt": 34.0,
+        "err_hybrid": 14.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 325,
+        "err_csrt": 38.0,
+        "err_hybrid": 17.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 326,
+        "err_csrt": 37.2,
+        "err_hybrid": 19.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 327,
+        "err_csrt": 37.0,
+        "err_hybrid": 19.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 328,
+        "err_csrt": 41.6,
+        "err_hybrid": 7.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 329,
+        "err_csrt": 43.0,
+        "err_hybrid": 14.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 330,
+        "err_csrt": 40.5,
+        "err_hybrid": 14.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 331,
+        "err_csrt": 43.8,
+        "err_hybrid": 17.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 332,
+        "err_csrt": 45.6,
+        "err_hybrid": 10.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 333,
+        "err_csrt": 48.7,
+        "err_hybrid": 14.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 334,
+        "err_csrt": 43.7,
+        "err_hybrid": 11.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 335,
+        "err_csrt": 46.1,
+        "err_hybrid": 14.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 336,
+        "err_csrt": 44.3,
+        "err_hybrid": 12.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 337,
+        "err_csrt": 44.2,
+        "err_hybrid": 13.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 338,
+        "err_csrt": 41.6,
+        "err_hybrid": 9.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 339,
+        "err_csrt": 37.9,
+        "err_hybrid": 10.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 340,
+        "err_csrt": 42.5,
+        "err_hybrid": 7.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 341,
+        "err_csrt": 44.4,
+        "err_hybrid": 9.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 342,
+        "err_csrt": 43.5,
+        "err_hybrid": 7.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 343,
+        "err_csrt": 45.2,
+        "err_hybrid": 7.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 344,
+        "err_csrt": 44.5,
+        "err_hybrid": 4.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 345,
+        "err_csrt": 47.6,
+        "err_hybrid": 6.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 346,
+        "err_csrt": 42.4,
+        "err_hybrid": 3.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 347,
+        "err_csrt": 41.1,
+        "err_hybrid": 5.9,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 348,
+        "err_csrt": 43.3,
+        "err_hybrid": 3.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 349,
+        "err_csrt": 44.2,
+        "err_hybrid": 4.9,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 350,
+        "err_csrt": 43.9,
+        "err_hybrid": 7.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 351,
+        "err_csrt": 45.4,
+        "err_hybrid": 6.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 352,
+        "err_csrt": 45.4,
+        "err_hybrid": 5.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 353,
+        "err_csrt": 46.8,
+        "err_hybrid": 6.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 354,
+        "err_csrt": 47.7,
+        "err_hybrid": 5.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 355,
+        "err_csrt": 47.1,
+        "err_hybrid": 5.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 356,
+        "err_csrt": 40.5,
+        "err_hybrid": 8.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 357,
+        "err_csrt": 36.5,
+        "err_hybrid": 5.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 358,
+        "err_csrt": 39.3,
+        "err_hybrid": 10.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 359,
+        "err_csrt": 37.6,
+        "err_hybrid": 9.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 360,
+        "err_csrt": 40.6,
+        "err_hybrid": 12.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 361,
+        "err_csrt": 41.4,
+        "err_hybrid": 11.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 362,
+        "err_csrt": 36.0,
+        "err_hybrid": 8.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 363,
+        "err_csrt": 31.6,
+        "err_hybrid": 9.5,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 364,
+        "err_csrt": 33.6,
+        "err_hybrid": 18.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 365,
+        "err_csrt": 31.4,
+        "err_hybrid": 13.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 366,
+        "err_csrt": 30.8,
+        "err_hybrid": 14.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 367,
+        "err_csrt": 30.7,
+        "err_hybrid": 13.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 368,
+        "err_csrt": 27.4,
+        "err_hybrid": 16.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 369,
+        "err_csrt": 28.0,
+        "err_hybrid": 15.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 370,
+        "err_csrt": 22.9,
+        "err_hybrid": 21.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 371,
+        "err_csrt": 26.9,
+        "err_hybrid": 15.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 372,
+        "err_csrt": 24.0,
+        "err_hybrid": 17.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 373,
+        "err_csrt": 26.0,
+        "err_hybrid": 15.5,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 374,
+        "err_csrt": 22.8,
+        "err_hybrid": 20.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 375,
+        "err_csrt": 14.7,
+        "err_hybrid": 14.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 376,
+        "err_csrt": 21.4,
+        "err_hybrid": 24.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 377,
+        "err_csrt": 28.6,
+        "err_hybrid": 22.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 378,
+        "err_csrt": 38.2,
+        "err_hybrid": 31.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 379,
+        "err_csrt": 58.4,
+        "err_hybrid": 24.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 384,
+        "err_csrt": 48.2,
+        "err_hybrid": 6.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 385,
+        "err_csrt": 48.5,
+        "err_hybrid": 4.9,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 386,
+        "err_csrt": 47.4,
+        "err_hybrid": 8.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 387,
+        "err_csrt": 48.3,
+        "err_hybrid": 4.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 388,
+        "err_csrt": 46.7,
+        "err_hybrid": 13.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 389,
+        "err_csrt": 39.3,
+        "err_hybrid": 8.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 390,
+        "err_csrt": 41.9,
+        "err_hybrid": 5.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 391,
+        "err_csrt": 42.8,
+        "err_hybrid": 8.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 392,
+        "err_csrt": 43.3,
+        "err_hybrid": 7.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 393,
+        "err_csrt": 44.2,
+        "err_hybrid": 9.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 394,
+        "err_csrt": 46.7,
+        "err_hybrid": 14.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 395,
+        "err_csrt": 42.2,
+        "err_hybrid": 12.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 396,
+        "err_csrt": 51.7,
+        "err_hybrid": 8.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 397,
+        "err_csrt": 59.0,
+        "err_hybrid": 8.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 398,
+        "err_csrt": 57.3,
+        "err_hybrid": 15.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 399,
+        "err_csrt": 59.0,
+        "err_hybrid": 12.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 400,
+        "err_csrt": 54.5,
+        "err_hybrid": 23.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 401,
+        "err_csrt": 61.8,
+        "err_hybrid": 19.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 404,
+        "err_csrt": 23.6,
+        "err_hybrid": 7.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 405,
+        "err_csrt": 28.9,
+        "err_hybrid": 9.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 406,
+        "err_csrt": 50.4,
+        "err_hybrid": 22.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 407,
+        "err_csrt": 110.5,
+        "err_hybrid": 14.9,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 417,
+        "err_csrt": 58.2,
+        "err_hybrid": 31.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 418,
+        "err_csrt": 51.3,
+        "err_hybrid": 10.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 419,
+        "err_csrt": 55.4,
+        "err_hybrid": 10.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 420,
+        "err_csrt": 46.2,
+        "err_hybrid": 3.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 421,
+        "err_csrt": 47.0,
+        "err_hybrid": 5.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 422,
+        "err_csrt": 49.3,
+        "err_hybrid": 6.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 425,
+        "err_csrt": 42.0,
+        "err_hybrid": 4.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 428,
+        "err_csrt": 51.1,
+        "err_hybrid": 8.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 429,
+        "err_csrt": 51.0,
+        "err_hybrid": 6.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 430,
+        "err_csrt": 39.8,
+        "err_hybrid": 4.7,
+        "state": "reinit(coco)"
+      },
+      {
+        "frame": 431,
+        "err_csrt": 42.9,
+        "err_hybrid": 4.5,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 432,
+        "err_csrt": 45.0,
+        "err_hybrid": 7.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 433,
+        "err_csrt": 55.2,
+        "err_hybrid": 5.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 434,
+        "err_csrt": 68.1,
+        "err_hybrid": 11.3,
+        "state": "reinit(coco)"
+      },
+      {
+        "frame": 435,
+        "err_csrt": 29.4,
+        "err_hybrid": 5.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 436,
+        "err_csrt": 44.3,
+        "err_hybrid": 8.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 437,
+        "err_csrt": 47.8,
+        "err_hybrid": 7.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 438,
+        "err_csrt": 44.4,
+        "err_hybrid": 7.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 439,
+        "err_csrt": 45.3,
+        "err_hybrid": 7.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 440,
+        "err_csrt": 44.2,
+        "err_hybrid": 6.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 441,
+        "err_csrt": 45.5,
+        "err_hybrid": 6.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 442,
+        "err_csrt": 45.0,
+        "err_hybrid": 7.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 443,
+        "err_csrt": 47.0,
+        "err_hybrid": 6.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 444,
+        "err_csrt": 45.2,
+        "err_hybrid": 7.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 445,
+        "err_csrt": 46.3,
+        "err_hybrid": 7.9,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 448,
+        "err_csrt": 45.1,
+        "err_hybrid": 6.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 449,
+        "err_csrt": 48.2,
+        "err_hybrid": 6.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 450,
+        "err_csrt": 50.4,
+        "err_hybrid": 9.2,
+        "state": "reinit(coco)"
+      },
+      {
+        "frame": 451,
+        "err_csrt": 48.2,
+        "err_hybrid": 5.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 452,
+        "err_csrt": 42.8,
+        "err_hybrid": 10.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 453,
+        "err_csrt": 37.0,
+        "err_hybrid": 8.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 454,
+        "err_csrt": 41.8,
+        "err_hybrid": 9.5,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 455,
+        "err_csrt": 38.4,
+        "err_hybrid": 5.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 456,
+        "err_csrt": 37.5,
+        "err_hybrid": 7.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 457,
+        "err_csrt": 37.5,
+        "err_hybrid": 7.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 458,
+        "err_csrt": 48.2,
+        "err_hybrid": 9.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 459,
+        "err_csrt": 61.7,
+        "err_hybrid": 6.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 460,
+        "err_csrt": 63.4,
+        "err_hybrid": 11.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 461,
+        "err_csrt": 61.9,
+        "err_hybrid": 9.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 462,
+        "err_csrt": 60.6,
+        "err_hybrid": 19.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 463,
+        "err_csrt": 55.6,
+        "err_hybrid": 13.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 464,
+        "err_csrt": 55.0,
+        "err_hybrid": 13.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 465,
+        "err_csrt": 45.1,
+        "err_hybrid": 12.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 466,
+        "err_csrt": 26.8,
+        "err_hybrid": 18.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 470,
+        "err_csrt": 10.8,
+        "err_hybrid": 18.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 471,
+        "err_csrt": 17.0,
+        "err_hybrid": 7.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 472,
+        "err_csrt": 19.1,
+        "err_hybrid": 11.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 473,
+        "err_csrt": 21.8,
+        "err_hybrid": 10.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 474,
+        "err_csrt": 22.9,
+        "err_hybrid": 11.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 475,
+        "err_csrt": 23.7,
+        "err_hybrid": 11.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 476,
+        "err_csrt": 25.6,
+        "err_hybrid": 6.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 477,
+        "err_csrt": 24.2,
+        "err_hybrid": 10.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 478,
+        "err_csrt": 24.0,
+        "err_hybrid": 6.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 479,
+        "err_csrt": 21.2,
+        "err_hybrid": 9.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 480,
+        "err_csrt": 22.1,
+        "err_hybrid": 5.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 481,
+        "err_csrt": 18.9,
+        "err_hybrid": 7.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 482,
+        "err_csrt": 14.6,
+        "err_hybrid": 8.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 485,
+        "err_csrt": 5.2,
+        "err_hybrid": 7.0,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 486,
+        "err_csrt": 6.9,
+        "err_hybrid": 27.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 487,
+        "err_csrt": 12.8,
+        "err_hybrid": 18.9,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 488,
+        "err_csrt": 16.7,
+        "err_hybrid": 30.3,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 489,
+        "err_csrt": 24.4,
+        "err_hybrid": 23.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 490,
+        "err_csrt": 23.4,
+        "err_hybrid": 19.2,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 491,
+        "err_csrt": 28.8,
+        "err_hybrid": 19.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 492,
+        "err_csrt": 27.2,
+        "err_hybrid": 17.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 493,
+        "err_csrt": 25.8,
+        "err_hybrid": 17.9,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 494,
+        "err_csrt": 30.8,
+        "err_hybrid": 11.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 497,
+        "err_csrt": 41.6,
+        "err_hybrid": 14.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 498,
+        "err_csrt": 37.4,
+        "err_hybrid": 19.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 509,
+        "err_csrt": 17.2,
+        "err_hybrid": 13.3,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 510,
+        "err_csrt": 16.7,
+        "err_hybrid": 4.9,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 511,
+        "err_csrt": 16.7,
+        "err_hybrid": 3.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 512,
+        "err_csrt": 20.0,
+        "err_hybrid": 16.8,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 518,
+        "err_csrt": 36.1,
+        "err_hybrid": 12.4,
+        "state": "reinit(coco)"
+      },
+      {
+        "frame": 519,
+        "err_csrt": 24.0,
+        "err_hybrid": 21.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 520,
+        "err_csrt": 27.6,
+        "err_hybrid": 5.4,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 521,
+        "err_csrt": 38.2,
+        "err_hybrid": 7.7,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 522,
+        "err_csrt": 44.8,
+        "err_hybrid": 7.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 525,
+        "err_csrt": 47.3,
+        "err_hybrid": 12.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 526,
+        "err_csrt": 47.8,
+        "err_hybrid": 11.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 527,
+        "err_csrt": 42.2,
+        "err_hybrid": 12.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 528,
+        "err_csrt": 39.5,
+        "err_hybrid": 18.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 529,
+        "err_csrt": 37.1,
+        "err_hybrid": 14.1,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 530,
+        "err_csrt": 39.7,
+        "err_hybrid": 9.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 531,
+        "err_csrt": 37.1,
+        "err_hybrid": 12.2,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 532,
+        "err_csrt": 30.3,
+        "err_hybrid": 13.0,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 533,
+        "err_csrt": 30.0,
+        "err_hybrid": 11.5,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 534,
+        "err_csrt": 26.9,
+        "err_hybrid": 11.7,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 535,
+        "err_csrt": 18.8,
+        "err_hybrid": 11.4,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 536,
+        "err_csrt": 17.4,
+        "err_hybrid": 15.6,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 537,
+        "err_csrt": 17.6,
+        "err_hybrid": 14.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 538,
+        "err_csrt": 5.8,
+        "err_hybrid": 19.8,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 539,
+        "err_csrt": 5.2,
+        "err_hybrid": 16.6,
+        "state": "predict(short)"
+      },
+      {
+        "frame": 540,
+        "err_csrt": 21.4,
+        "err_hybrid": 22.1,
+        "state": "det(coco)"
+      },
+      {
+        "frame": 541,
+        "err_csrt": 34.7,
+        "err_hybrid": 18.2,
+        "state": "predict(short)"
+      }
+    ],
+    "output_video": "D:\\md\\task2\\outputs\\videos\\example4_tracking.mp4"
+  }
+}

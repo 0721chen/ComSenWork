@@ -1,0 +1,99 @@
+{
+  "file": "example1.jpg",
+  "image_size": [
+    1036,
+    584
+  ],
+  "otsu_threshold": 105.0,
+  "min_area_px2": 302.5,
+  "n_contours": 4,
+  "total_area_px2": 99321.0,
+  "total_perimeter_px": 4161.5,
+  "total_area_ratio_pct": 16.416,
+  "total_area_approx_poly_px2": 98131.5,
+  "total_perimeter_approx_poly_px": 3859.2,
+  "net_area_with_holes_px2": 98889.0,
+  "image_area_px2": 605024,
+  "contours": [
+    {
+      "id": 1,
+      "area_px2": 71772.5,
+      "perimeter_px": 2300.3,
+      "area_approx_poly_px2": 70283.5,
+      "perimeter_approx_poly_px": 2120.3,
+      "vertices_approx": 23,
+      "centroid": [
+        542,
+        294
+      ],
+      "bbox_xywh": [
+        102,
+        190,
+        819,
+        185
+      ],
+      "circularity_4piA_P2": 0.17,
+      "area_ratio_pct": 11.863
+    },
+    {
+      "id": 2,
+      "area_px2": 16052.5,
+      "perimeter_px": 820.1,
+      "area_approx_poly_px2": 16438.5,
+      "perimeter_approx_poly_px": 742.8,
+      "vertices_approx": 24,
+      "centroid": [
+        716,
+        61
+      ],
+      "bbox_xywh": [
+        588,
+        0,
+        310,
+        122
+      ],
+      "circularity_4piA_P2": 0.3,
+      "area_ratio_pct": 2.653
+    },
+    {
+      "id": 3,
+      "area_px2": 11104.5,
+      "perimeter_px": 915.7,
+      "area_approx_poly_px2": 11014.5,
+      "perimeter_approx_poly_px": 873.0,
+      "vertices_approx": 14,
+      "centroid": [
+        894,
+        560
+      ],
+      "bbox_xywh": [
+        668,
+        514,
+        368,
+        70
+      ],
+      "circularity_4piA_P2": 0.166,
+      "area_ratio_pct": 1.835
+    },
+    {
+      "id": 4,
+      "area_px2": 391.5,
+      "perimeter_px": 125.4,
+      "area_approx_poly_px2": 395.0,
+      "perimeter_approx_poly_px": 123.1,
+      "vertices_approx": 34,
+      "centroid": [
+        108,
+        183
+      ],
+      "bbox_xywh": [
+        86,
+        174,
+        48,
+        22
+      ],
+      "circularity_4piA_P2": 0.313,
+      "area_ratio_pct": 0.065
+    }
+  ]
+}

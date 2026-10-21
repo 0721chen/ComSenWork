@@ -1,0 +1,22 @@
+# ---------------------------------------------------------------------------
+# 作业环境依赖（Python >= 3.10，实测 Python 3.13.7 / Windows 11 CPU）
+#
+# 安装：
+#   pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+#
+# 说明：
+#   * opencv-contrib-python 含有 extra 模块（CSRT / KCF / MOSSE 等 tracker），
+#     只装 opencv-python 是不够的；
+#   * torch / torchvision：task-3 的 MLP 训练 + task-2 题五的 COCO 预训练检测器
+#     （`sports ball` 类）都依赖它；PyPI 上默认是 CPU 版本，用 GPU 请去 pytorch.org 选 CUDA 版；
+#     torchvision 的预训练权重会在首次运行时自动下载（约 75MB，缓存在 ~/.cache/torch）；
+#   * pyarrow：读取题目提供的 MNIST parquet 数据集（task3/train-00000-of-00001.parquet）。
+# ---------------------------------------------------------------------------
+numpy>=1.24
+opencv-contrib-python==4.11.0.86
+pillow>=10.0
+matplotlib>=3.7
+pandas>=2.0
+torch>=2.2
+torchvision>=0.17
+pyarrow>=14.0

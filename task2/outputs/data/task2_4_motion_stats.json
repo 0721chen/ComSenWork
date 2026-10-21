@@ -1,0 +1,61 @@
+{
+  "video": "example2.mp4",
+  "size": [
+    1280,
+    720
+  ],
+  "fps": 29.97,
+  "processed_frames": 984,
+  "params": {
+    "diff_threshold": 25,
+    "min_area_px2": 120,
+    "big_area_ratio": 0.15,
+    "mog2": {
+      "history": 300,
+      "varThreshold": 16,
+      "detectShadows": true
+    }
+  },
+  "metrics": {
+    "A 帧差法(无背景减除)": {
+      "mean_area_px2": 23614.3,
+      "median_area_px2": 20581.8,
+      "mean_blobs": 7.86,
+      "median_blobs": 7.0,
+      "single_target_rate": 0.004,
+      "empty_rate": 0.001,
+      "mean_fill_ratio": 0.552,
+      "mean_solidity": 0.725,
+      "centroid_jitter_px": 70.47,
+      "fullscreen_false_frames": 0,
+      "ms_per_frame": 1.18
+    },
+    "B MOG2 背景减除": {
+      "mean_area_px2": 22404.8,
+      "median_area_px2": 18844.0,
+      "mean_blobs": 8.02,
+      "median_blobs": 8.0,
+      "single_target_rate": 0.0,
+      "empty_rate": 0.005,
+      "mean_fill_ratio": 0.692,
+      "mean_solidity": 0.871,
+      "centroid_jitter_px": 54.84,
+      "fullscreen_false_frames": 0,
+      "ms_per_frame": 7.02
+    },
+    "C MOG2+亮度补偿": {
+      "mean_area_px2": 22163.6,
+      "median_area_px2": 18399.0,
+      "mean_blobs": 8.33,
+      "median_blobs": 8.0,
+      "single_target_rate": 0.0,
+      "empty_rate": 0.005,
+      "mean_fill_ratio": 0.686,
+      "mean_solidity": 0.864,
+      "centroid_jitter_px": 55.66,
+      "fullscreen_false_frames": 1,
+      "ms_per_frame": 17.92
+    }
+  },
+  "has_ground_truth": false
+}
