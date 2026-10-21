@@ -30,7 +30,7 @@ EXPECTED_IMAGES = [
     T2 / "figures" / "fig_task2_5_tracking_example4.png",
     T2 / "images" / "task2_3_contours_annotated.png",
     T2 / "images" / "task2_3_mask.png",
-    T2 / "images" / "task2_3_hierarchy.png",
+    T2 / "images" / "task2_3_rejected.png",
     T2 / "images" / "channel_B.png",
     T2 / "images" / "channel_G.png",
     T2 / "images" / "channel_R.png",

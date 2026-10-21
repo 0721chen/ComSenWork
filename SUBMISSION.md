@@ -101,7 +101,7 @@ pandas 3.0 / numpy 2.4 / pyarrow / **ultralytics 8.4.182**。
 | --- | --- |
 | 打开并显示图片，分离三个通道 | `outputs/figures/fig_task2_1_open.png`、`fig_task2_1_channels.png`、`images/channel_{B,G,R}.png` |
 | 缩放 / 旋转 / 平移 / 翻转 | `outputs/figures/fig_task2_2_geometric.png`、`images/task2_2_*.jpg`（8 张） |
-| 检测 example1.jpg 轮廓并保存，计算总面积与总周长 | `images/task2_3_contours_annotated.png`、`images/task2_3_mask.png`、`figures/fig_task2_3_contours.png`、`data/task2_3_contours.json`（**4 个轮廓，总面积 99 321 px²，总周长 4 161.5 px**） |
+| 检测 example1.jpg 轮廓并保存，计算总面积与总周长 | `images/task2_3_contours_annotated.png`、`images/task2_3_mask.png`、`images/task2_3_rejected.png`、`figures/fig_task2_3_contours.png`、`data/task2_3_contours.json`（**只保留 1 个飞机轮廓：总面积 71 772.5 px²，总周长 2 300.3 px**；3 个云候选已剔除） |
 | example2.mp4 运动检测，比较 MOG2 与不使用背景减除 | **`videos/example2_motion_compare.mp4`**（984 帧四分屏）、`figures/fig_task2_4_motion_stats.png`、`figures/fig_task2_4_frames.png`、`data/task2_4_motion_stats.{json,csv}` |
 | example3/4.mp4 小球追踪，保存视频，思考如何提高准确度 | **`videos/example3_tracking.mp4`**、**`videos/example4_tracking.mp4`**、`figures/fig_task2_5_tracking_example{3,4}.png`、`data/task2_5_tracking_metrics.json`、报告 §5.4 |
 | 文档 | `task2/REPORT.md` |
@@ -171,7 +171,7 @@ python tools/build_submission.py     # 自动生成 提交/ 目录 + 压缩包
 
 ## 七、主要结论速览
 
-* **task2-3**：真实照片上双分支分割得到 **4 个轮廓，总面积 99 321 px²（16.4% 画面）、总周长 4 161.5 px**；
+* **task2-3**：example1.jpg 是"天空+飞机+云"：用「Otsu 暗色 ∪ 低饱和高亮」得到候选，再用**边缘密度（飞机 12.3% vs 云 0.0%）+ 亮度 V（飞机 128 vs 云 197~210）** 剔除 3 个云候选，只留飞机 → **面积 71 772.5 px²（11.86% 画面）、周长 2 300.3 px**；
   多边形近似后周长少 7.3%；`RETR_TREE` 扣孔后净面积少 432 px²。
 * **task2-4**（984 帧真实街景）：帧差法的**实心度 0.725 vs MOG2 0.871**、**填充度 0.552 vs 0.692**、
   **质心抖动 70.5 px vs 54.8 px** —— 帧差只给"运动边缘"，MOG2 给"完整剪影"；
